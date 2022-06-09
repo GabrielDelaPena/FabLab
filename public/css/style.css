@@ -1,0 +1,578 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.error {
+    color: red;
+    margin: 5px 0;
+}
+
+.success {
+    color: green;
+}
+
+.success_opladen {
+    color: green;
+    margin: 10px 0 0;
+}
+
+body {
+    width: 90%;
+    margin: 30px auto 0 auto;
+    font-family: Poppins, sans-serif;
+    background-color: #f3f3f3;
+    color: #353535;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav div a {
+    border: 2px solid #353535;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #353535;
+    padding: 2px;
+}
+
+nav ul {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #353535;
+    font-size: 1.2rem;
+}
+
+.a_login {
+    border-bottom: 1px solid black;
+}
+
+/* Content */
+
+.content {
+    margin: 20px 0 0 0;
+    height: 80vh;
+    background-color: white;
+}
+
+/* Login page */
+
+.login_form {
+    width: 30%;
+    margin: 0 auto 0 auto;
+    padding: 130px 0 0 0;
+    text-align: center;
+}
+
+.text {
+    height: 30px;
+    margin: 0 0 18px 0;
+    font-size: 1.2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input {
+    width: 280px;
+    height: 35px;
+    background-color: #f1f1f1;
+    border: none;
+    padding: 0 0 0 5px;
+    font-size: 0.9rem;
+}
+
+.input:focus,
+input:focus {
+    outline: none;
+}
+
+.check_box {
+    margin: 0 0 0 65px;
+    height: 25px;
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.8rem;
+}
+
+.btn_login {
+    width: 150px;
+    height: 35px;
+    border: 2px solid black;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    margin: 0 0 0 65px;
+}
+
+.forget_pass {
+    display: flex;
+    font-size: 0.9rem;
+    gap: 5px;
+    margin: 0 0 0 65px;
+}
+
+/* Catalogus page */
+
+.alle_artikelen {
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+
+.container_product {
+    width: 72%;
+    height: 75%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0 auto 0 auto;
+    padding: 10px 0 0 0;
+}
+
+.product {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 100px;
+    padding: 0 15px;
+    border-bottom: 1px solid gray;
+}
+
+.product_name {
+    color: black;
+    text-decoration: none;
+}
+
+.product:last-child {
+    border-bottom: none;
+}
+
+.product_info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product_name {
+    font-weight: 550;
+}
+
+.product_desc {
+    width: 60%;
+}
+
+.container_kopen {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn_kopen {
+    height: 25px;
+    width: 45px;
+    border: solid 2px black;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.quantity {
+    width: 80px;
+    height: 20px;
+    border: none;
+    border-bottom: black solid 1px;
+}
+
+.container_checkout {
+    width: 72%;
+    height: 25px;
+    margin: 30px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aanpassen_text {
+    text-decoration: none;
+    color: black;
+}
+
+.btn_checkout {
+    width: 120px;
+    height: 35px;
+    border: solid 2px black;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.checkout_text {
+    text-decoration: none;
+    color: black;
+}
+
+.label_total {
+    font-size: 1rem;
+}
+
+.total_item {
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+.payment_btns {
+    display: flex;
+    flex-direction: row;
+}
+
+.cancel_text {
+    text-decoration: none;
+    color: black;
+}
+
+/* Contact page */
+
+.container_contact {
+    width: 25%;
+    height: 50%;
+    margin: auto;
+    padding: 100px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact_label {
+    font-size: 1.5rem;
+}
+
+.cotact_info {
+    font-size: 1.2rem;
+}
+
+/* Admin page */
+
+.container_admin {
+    width: 65%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.list_title {
+    font-size: 1.7rem;
+    margin: 0 0 20px 0;
+}
+
+.section_student {
+    width: 45%;
+    height: 100%;
+}
+
+.section_item {
+    width: 45%;
+    height: 100%;
+}
+
+.list {
+    width: 100%;
+    height: 80%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 10px;
+}
+
+.student {
+    display: flex;
+    flex-direction: row;
+    height: 65px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    margin: 0 0 10px 0;
+}
+
+.name_uuid {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.name {
+    font-size: 1.2rem;
+}
+
+.uuid {
+    font-size: 0.7rem;
+}
+
+.balance {
+    font-size: 0.9rem;
+    font-weight: 550;
+}
+
+.btn_list {
+    width: 85px;
+    height: 35px;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.item {
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+
+.btn_add {
+    width: 120px;
+    height: 40px;
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    margin: 30px 0 0 0;
+}
+
+.btn_link_text {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+}
+
+.name_item {
+    text-decoration: none;
+    color: black;
+}
+
+/* Form new student page */
+
+.container_form_student {
+    width: 30%;
+    height: 50%;
+    margin: auto;
+    padding: 15px 0 0 0;
+}
+
+.form_student_title {
+    margin: 0 0 50px 40px;
+    font-size: 1.2rem;
+}
+
+.input_student_text {
+    width: 280px;
+    height: 35px;
+    background-color: #f1f1f1;
+    border: none;
+    padding: 0 0 0 5px;
+    font-size: 0.9rem;
+}
+
+.input_student_number {
+    width: 280px;
+    height: 35px;
+    background-color: #f1f1f1;
+    border: none;
+    padding: 0 0 0 5px;
+    font-size: 0.9rem;
+}
+
+.btn_add_student {
+    height: 35px;
+    width: 200px;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.description {
+    font-size: 1rem;
+}
+
+/* Payment page */
+
+.container_payment {
+    width: 30%;
+    margin: 0 auto 0 auto;
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+
+.list_order {
+    height: 300px;
+    width: 450px;
+    margin: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.total_price {
+    font-weight: 550;
+}
+
+.form_payment {
+    margin: 20px 0 0 0;
+}
+
+.order {
+    display: flex;
+    flex-direction: row;
+    height: 65px;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    margin: 0 0 10px 0;
+    padding: 0 10px;
+}
+
+/* Orders */
+
+.order_text {
+    text-align: center;
+    margin: 0 0 25px 0;
+    padding: 20px 0 0 0;
+}
+
+.orders_container {
+    padding: 10px 0 0 0;
+    height: 450px;
+    width: 50%;
+    margin: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.order_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 95%;
+    border-bottom: 1px solid black;
+    margin: auto;
+}
+
+.order_item:last-child {
+    border: none;
+}
+
+/* Item */
+
+.item_container {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px 0 0 0;
+}
+
+.item_title {
+    font-size: 1.5rem;
+    margin: 0 0 45px 0;
+}
+
+.item_info {
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+/**/
+
+.container_product_1 {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 75%;
+    height: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px 0 0 0;
+    flex-wrap: wrap;
+}
+
+.product_1 {
+    width: 200px;
+    height: 260px;
+    border: 1px solid black;
+    margin: 0 0 0 28px;
+}
+
+.product_info_1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 1px solid black;
+    padding: 0 0 0 4px;
+}
+
+.container_kopen_1 {
+    margin: 10px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 0 0 0 4px;
+}
+
+.product_name_1 {
+    text-decoration: none;
+    color: black;
+    margin: 5px 0 0 0;
+}
+
+.quantity_1 {
+    height: 25px;
+    width: 80px;
+}
+
+.btn_kopen_1 {
+    height: 25px;
+    width: 50px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.error_btn {
+    border: 2px solid black;
+    width: 170px;
+    height: 200px;
+    text-decoration: none;
+    color: black;
+}
