@@ -50,7 +50,7 @@ https://stackoverflow.com/questions/52658708/how-to-use-pre-defined-destroy-meth
 Uuid   
 https://blog.programster.org/laravel-use-uuid-for-model-id
 
-CartController
+CartController     
 https://github.com/bumbummen99/LaravelShoppingcart
 
 Cancel button  
